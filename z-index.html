@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <title>z-index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .test1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            z-index: 10002;
+        }
+        .test2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+            top:-50px;
+            left: 0;
+            z-index: 10003;
+        }
+        .test3 {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #666;
+            background: green;
+            display: inline-block;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1"></div>
+    <div class="test2">
+        <span class="test3">1111</span><span class="test3">2222</span><span class="test3">333</span>
+    </div>
+
+</body>
+</html>
